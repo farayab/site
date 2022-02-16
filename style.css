@@ -1,0 +1,321 @@
+
+* {
+    margin-top: 0;
+}
+body {
+    /* background-color: black; */
+    background-image: url(back.jpg);
+    background-attachment: fixed;
+    background-size: 200px;
+    margin: 0;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-bottom: 2px solid #f29220;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;   z-index: 1000;
+    
+
+}
+.navbar img{
+    height:90%;
+    margin-left: 20px;
+ 
+}
+.navbar nav a {
+    text-decoration: none;
+    color: white;
+    /* padding: ; */
+    /* background-color: orchid; */
+    position: relative;
+    /* font-size: large; */
+    font-weight: bold;
+    padding: 0.6rem;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: black;
+    /* font-weight: bold; */
+}   
+
+nav a::after {
+content: '';
+height: 3px;
+width: 0%;
+background-color: orangered;
+left: 0;
+bottom: 0;
+position: absolute;
+transition: 0.5s;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+
+.firstBanner {
+    height: 20vh;
+    width: 80%;
+    margin:45px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #ff720c ;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    ;
+
+}
+
+.firstBanner h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.welcome {
+    text-align: left;
+    margin: 0;
+    font-size: small;
+    letter-spacing: 3px;
+    color: silver;
+}
+
+.high {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 0;
+    color: silver;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+
+}
+.pic {
+    margin-top: 10px;
+}
+.pic p {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.pic img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 80%;
+}
+.pic p{
+    color: lightgrey;
+    text-align: center;
+    font-weight: bold;
+}
+hr {border-color: #ff720c f29220;
+    height: 1px;
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 20%;
+}
+
+.three {
+margin-top: 10px;
+    margin-left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.three div{ 
+    background-color:#ff720c;
+        color: #000000 ;
+}
+.three .icon-heading {
+    display: inline-block;
+}
+
+.three .lineheight {
+     line-height: 45px;
+     margin-left: 10px;
+     width: 100px;
+}
+.three .icon {
+    margin-left: 5px ;
+    margin-top: 5px;
+}
+ .three h3 {
+     /* color: rgb(255, 255, 255); */
+     margin: 10px 2px 2px 10px;
+     display: inline-block;
+ }
+ .three i {
+     display: inline-block;
+ }
+
+ .three h5 {
+    /* color: whitesmoke; */
+    margin: 0 2px 2px 5px;
+    text-align: justify;
+    margin: 10px;
+    font-size: small;
+}
+
+.brands {
+    display: flex;
+   overflow: hidden;
+   width: 80%;
+   margin-left: 10%;
+   
+    
+}
+.brands img {
+width: 7%;
+margin: 10px;
+
+}
+
+@media screen and (max-width: 810px) {
+
+
+.three {
+    margin-top: 10px;
+        margin-left: 10%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+}
+
+.brands {
+    display: flex;
+   overflow: hidden;
+width:100%;
+margin-left: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+.welcome {
+    font-size: 12px;
+    }
+
+    .high {
+        font-size: 15px;
+   }
+
+.firstBanner {
+    height: 15vh;
+    width: 90%;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+
+    .three {
+        margin-top: 10px;
+            margin-left: 10%;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr; 
+    }
+    
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+       overflow: hidden;
+    width:100%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    }
+    .brands img {
+        width: 14%;
+        margin: 2px;
+        background-color: #000000;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    .welcome {
+        font-size: 10px;
+        }
+    
+        .high {
+            font-size: 9px;
+            letter-spacing: 5px;
+       }
+    
+    .firstBanner {
+        height: 10vh;
+        width: 90%;
+        margin-top: 80px;
+    }
+    
+    .navbar nav a {
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0 5px 50px 5px;
+        padding: 0 10px 5px 10px;
+     }
+   
+     .navbar img{
+        width:120px;
+        height:auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        /* margin-left: 20px; */
+    }
+    .navbar {
+        display: flex;
+        align-items: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height:max-content;
+        background-color: black;
+        border-bottom: 2px solid #f29220;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;   z-index: 1000;
+        
+    
+    }
+    nav {
+        margin: 0;padding: 0;
+        height: 25px;
+    }
+}
+
