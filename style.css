@@ -3,7 +3,7 @@
     margin-top: 0;
 }
 body {
-    /* background-color: black; */
+    background-color: black;
     background-image: url(back.jpg);
     background-attachment: fixed;
     background-size: 200px;
